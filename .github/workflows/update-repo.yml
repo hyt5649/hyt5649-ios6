@@ -1,0 +1,32 @@
+name: Update Repository
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'debs/**'
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install APT Utilities
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev bzip2
+
+      - name: Generate Packages and Packages.bz2
+        run: |
+          dpkg-scanpackages -m debs /dev/null > Packages
+          bzip2 -fk Packages
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          git add Packages Packages.bz2
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Packages index" && git push)
