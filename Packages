@@ -1,0 +1,16 @@
+Package: ru.ash.metrophone
+Version: 0.22.9
+Architecture: iphoneos-arm
+Maintainer: ash
+Installed-Size: 6792
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: debs/ru.ash.metrophone_0.22.9_iphoneos-arm.deb
+Size: 5339964
+MD5sum: 368de3326f78d06c5ae342c5114d24f3
+SHA1: 91401b9af467956adb40b441d6746e88e3ac1eeb
+SHA256: d33628f07b13707721a318523c58bc1a69b69443591b7bb02badb1a65a799a98
+Section: Tweaks
+Description: Тема Windows Phone (Metro) для iOS 6: плоские тёмные панели, квадратные плитки, типографика Segoe WP и акцентный цвет.
+Author: ash
+Name: MetroPhone
+
