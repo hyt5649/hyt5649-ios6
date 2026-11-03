@@ -1,3 +1,82 @@
+Package: anondev.LocalIAPStore.cw
+Version: 1.4-1
+Architecture: iphoneos-arm
+Maintainer: CaptainW
+Depends: firmware (>= 5.1.1), mobilesubstrate, preferenceloader
+Filename: debs/anondev.localiapstore.cw_1.4-1_iphoneos-arm.deb
+Size: 42450
+MD5sum: ae55ebea224a5dc229c5a90749475416
+SHA1: bf7a8eb0f0e12ef0286d741d383832ee7e95a5c4
+SHA256: cf705c0a46e474fdec0c6509b07509c0675b54a3992286f7db8050f9de0d2e2a
+Section: Tweaks
+Priority: optional
+Description: Pwns In-app purchases on iOS 5.1.1 - 7.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible
+Author: anondev
+Name: LocalIAPStore
+Sileodepiction: https://captainw.github.io/repo/sileodepictions/anondev.LocalIAPStore.cw/s.json
+
+Package: com.victorlobe.veteris
+Version: 4.0.2
+Architecture: iphoneos-arm
+Maintainer: Victor
+Installed-Size: 6216
+Depends: firmware (>= 5.0), com.victorlobe.veterishelper
+Conflicts: com.ixmoe.1pwn.veteris, moe.yzu.veterishelper
+Replaces: com.ixmoe.1pwn.veteris, moe.yzu.veterishelper
+Filename: debs/com.victorlobe.veteris_4.0.2_iphoneos-arm.deb
+Size: 3254988
+MD5sum: 96f22c4f2a608ad14e9154455e7a9624
+SHA1: 59b33d893902be5f6f8b7e8a51d9c109eccb1ddf
+SHA256: cc4c17ed371054e7d4db7dc6233617d093ab50aaa7a39221a2c8f0c3acc49ba9
+Section: Utilities
+Homepage: http://www.veteris.victorlobe.me/
+Description: Welcome back!
+Author: Victor
+Compatibility: iOS 5.0+
+Depiction: http://repo.victorlobe.me/depictions/depiction.html?id=com.victorlobe.veteris
+Icon: file:///Applications/Veteris.app/AppIcon57x57@2x.png
+Name: Veteris
+
+Package: mobilesubstrate
+Version: 0.9.5101
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Filename: debs/mobilesubstrate_0.9.5101_iphoneos-arm.deb
+Size: 79486
+MD5sum: 07e63db96bc81426f215abc93891e70a
+SHA1: 5c28f364a97cf18b58bf4b3df43f2fb7c2233e1c
+SHA256: a4942b467e6cbdb93adaeae4135e9cff804616d752f8f003e75ad13ee51edad4
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: preferenceloader
+Version: 2.2.4~beta1
+Architecture: iphoneos-arm
+Maintainer: Dustin Howett <cydia.pl@relay.howett.net>
+Installed-Size: 532
+Depends: mobilesubstrate
+Filename: debs/preferenceloader_2.2.4~beta1_iphoneos-arm.deb
+Size: 33838
+MD5sum: 61efed5a8aa8507208731da2d737c882
+SHA1: 5c180113d9fc6263cf30700a725dacb92b546218
+SHA256: d395cfb1d8dd56f984df50dc0db33746e3e1e72f311be5bad3f4235342b21b90
+Section: System
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Description: load preferences in style
+Tag: role::hacker, purpose::library
+Author: Dustin Howett <cydia.pl@relay.howett.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Dev: dustinhowett
+Name: PreferenceLoader
+
 Package: ru.ash.metrophone
 Version: 0.22.9
 Architecture: iphoneos-arm
